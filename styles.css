@@ -1,0 +1,315 @@
+:root {
+    --web-grey: #353A40;
+    --web-yellow: #FFC800;
+    --web-greenLight: #96C93E;
+    --web-green: #2BA542;
+    --web-cyan: #16A1B6;
+    --web-red: #DD3544;
+    --web-blue: #1E5170;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- Sección HEADER ---- */
+header {
+    background-color: var(--web-grey);
+}
+.header-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.header-inner {
+    width: 100%;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+.logo-content {
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+}
+.logo-content:hover {
+    color: var(--web-yellow);
+}
+
+.primary-menu {
+    display: flex;
+    gap: 24px;
+    font-size: 1.6rem;
+    list-style: none;
+    
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+}
+.menu-item a:hover {
+    color: var(--web-yellow);
+}
+.tickets a{
+    text-decoration: none;
+    color: var(--web-greenLight);
+}
+.tickets a:hover {
+    color: var(--web-green);
+}
+
+/* ---- Sección CONFERENCIA ---- */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.443), rgba(0, 0, 0, 0.443)), url(./img/ba1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.image-filter {
+    filter: brightness(0.5);
+}
+.hero-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero__content {
+    position: absolute;
+    top: 200px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.hero__content h1 {
+    margin: 0;
+    text-align: end;
+    font-size: 4rem;
+    color: white;
+}
+.hero__content p {
+    margin: 0;
+    text-align: end;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: white;
+}
+
+.hero__btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+
+}
+.btn-fill {
+    background: var(--web-greenLight);
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+.btn-fill:hover {
+    background: var(--web-green);
+    color: #fff;
+}
+.btn-outfill {
+    color: #ffffff;
+    padding: 10px 40px;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+}
+.btn-outfill:hover {
+    background: white;
+    color: var(--web-grey);
+}
+
+/* ---- Sección ORADORES ---- */
+.oradores-main {
+    padding: 48px 0;
+}
+.oradores {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.oradores h2 {
+    font-size: 3.2rem;
+    margin-bottom: 0;
+}
+.oradores h5 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+.oradores p {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+.oradores span {
+    text-decoration: underline;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.card {
+    width: 280px;
+}
+.card-chips {
+    padding-top: 16px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.card-chips p {
+    padding: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 0;
+}
+.card-chips .react {
+    color: white;
+    background-color: var(--web-cyan);
+}
+.card-chips .javaScript {
+    background-color: var(--web-yellow);  
+}
+.card-chips .negocios {
+    color: white;
+    background-color: var(--web-grey);  
+}
+.card-chips .startups {
+    color: white;
+    background-color: var(--web-red);  
+}
+
+.card-title {
+    font-size: 1.8rem;
+}
+.card-text {
+    font-size: 1.4rem;
+}
+
+/* ---- Sección LOCACIÓN ---- */
+.main-locacion {
+    padding: 40px 0;
+}
+.locacion-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.locacion-img {
+    display: grid;
+    grid-column: 1;
+}
+
+.locacion-content {
+    display: grid;
+    grid-column: 2;
+    padding: 24px 24px 0 16px;
+    background-color: var(--web-grey);
+}
+
+.locacion-content h5 {
+    padding-bottom: 8px;
+    font-size: 2.4rem;
+    color: white;
+}
+.locacion-content p {
+    padding-bottom: 24px;
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: white;
+}
+
+/* ---- Sección FORMULARIO ---- */
+.main-formulario {
+    padding: 48px 0;
+}
+.form-container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.btn-color {
+    padding: 8px 0;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 4px;
+    background-color: var(--web-greenLight);
+}
+.btn-color:hover {
+    background-color: var(--web-green);
+}
+
+/* ---- Sección FOOTER ---- */
+.main-footer {
+    padding: 24px 0;
+    background-color: var(--web-blue);
+}
+.footer-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.footer-items {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 1.4rem;
+    text-align: center;
+    list-style: none;
+    color: white
+
+}
+.footer-items a {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+.footer-items a:hover {
+    color: #FFC800;
+}
